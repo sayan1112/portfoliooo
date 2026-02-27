@@ -652,13 +652,29 @@ h1 {
   .hero-visual {
     margin-top: 2rem;
     align-items: center;
+    gap: 2rem;
   }
-  .projects-grid, .working-list {
+  .projects-grid, .skills-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .working-list {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .skill-card.learning {
+    grid-row: auto;
   }
   .exp-item {
     grid-template-columns: 1fr;
     gap: 0.5rem;
+    padding: 1.5rem 0;
+  }
+  .exp-role {
+    font-size: 1.2rem;
+  }
+  .exp-org {
+    font-size: 1rem;
   }
   .exp-date {
     text-align: left;
@@ -666,13 +682,190 @@ h1 {
   .section-title {
     font-size: 2.5rem;
   }
+  .section-header h2 {
+    font-size: 3rem;
+  }
+  .values-container h2, .contact-container h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 3rem 1rem;
+  }
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+  .contact-section {
+    padding: 3rem 1rem;
+  }
+  .nav-container {
+    padding: 0 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .nav-links a {
+    font-size: 0.9rem;
+    padding: 0.2rem;
+  }
+  .system-box {
+    height: auto;
+    min-height: 400px;
+    width: 100%;
+    box-shadow: 6px 6px 0px 0px #000000;
+  }
+  .system-header {
+    flex-wrap: wrap;
+  }
+  .system-content {
+    padding: 1rem;
+  }
+  .tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  .skill-item {
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
 }
 
 @media (max-width: 600px) {
   .stats-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
-  .nav-links {
-    display: none;
+  .stat-card {
+    padding: 1rem;
+  }
+  .stat-value {
+    font-size: 2rem;
+  }
+  .hero-actions {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .btn-primary, .btn-secondary {
+    width: 100%;
+  }
+  .tag {
+    font-size: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  .hero-subtext {
+    font-size: 1rem;
+  }
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+  .section-header {
+    margin-bottom: 2rem;
+  }
+  .values-container h2, .contact-container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .contact-container p {
+    font-size: 1rem;
+  }
+  .value-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .bar {
+    width: 40px;
+    height: 8px;
+  }
+  .value-item p {
+    font-size: 1.2rem;
+  }
+  .project-card {
+    padding: 1.2rem;
+  }
+  .skill-card {
+    padding: 1.2rem;
+  }
+  .skill-card h3 {
+    font-size: 1.5rem;
+  }
+  .skill-card p {
+    font-size: 1rem;
+  }
+  .project-card h3 {
+    font-size: 1.8rem;
+  }
+  .project-card .project-desc {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .project-card .tag-item {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+  }
+  .project-link {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+  }
+  .work-item {
+    padding-top: 1.5rem;
+  }
+  .work-item h3 {
+    font-size: 1.5rem;
+  }
+  .work-item p {
+    font-size: 1rem;
+  }
+  .contact-actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer {
+    padding: 2rem 1rem;
+  }
+  .copyright {
+    font-size: 0.9rem;
+  }
+  .built-with {
+    font-size: 0.7rem;
+  }
+  .profile-container {
+    max-width: 250px;
+  }
+  .profile-img {
+    box-shadow: 8px 8px 0px 0px #000;
+  }
+  .profile-container:hover .profile-img {
+    box-shadow: 12px 12px 0px 0px #000;
+  }
+  .status-badge {
+    right: -10px;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+  .logo {
+    font-size: 1.2rem;
+  }
+  .btn-email {
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
 }
