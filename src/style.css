@@ -119,6 +119,7 @@ body {
   font-weight: 700;
   cursor: pointer;
   transition: transform 0.2s ease;
+  text-decoration: none;
 }
 
 .btn-email:hover {
