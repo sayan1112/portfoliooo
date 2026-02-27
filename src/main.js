@@ -9,12 +9,12 @@ const skillsData = {
   ],
   backend: [
     { icon: '💻', text: 'Building Scalable Systems' },
-    { icon: '🚀', text: 'Backend Development' },
-    { icon: '💾', text: 'Database Management' }
+    { icon: '🚀', text: 'Backend (Node.js & Python)' },
+    { icon: '💾', text: 'Java & Database Management' }
   ],
   fundamentals: [
-    { icon: '🧠', text: 'Data Structures' },
-    { icon: '⚙️', text: 'Algorithms' },
+    { icon: '⚛️', text: 'React.js & Frontend Dev' },
+    { icon: '📜', text: 'Modern JavaScript (ES6+)' },
     { icon: '🤝', text: 'Open Source Contributor' }
   ]
 };
@@ -32,7 +32,7 @@ const projectsData = [
     type: 'SYSTEM',
     status: 'Coming Soon',
     title: 'Scalable Backend Node',
-    description: 'A robust starting point for high-performance backend applications.',
+    description: 'A robust starting point for high-performance backend applications using Node and Redis.',
     tags: ['Node.js', 'Express', 'Redis'],
     link: '#'
   }
@@ -46,7 +46,7 @@ function initTabs() {
   // Rename tabs to match the hybrid CS + Video profile
   if (tabs[0]) tabs[0].innerText = 'Editing';
   if (tabs[1]) tabs[1].innerText = 'Systems';
-  if (tabs[2]) tabs[2].innerText = 'Fundamentals';
+  if (tabs[2]) tabs[2].innerText = 'Frontend';
 
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
@@ -93,7 +93,7 @@ function renderProjects() {
       <div class="project-tags">
         ${project.tags.map(tag => `<span class="tag-item">${tag}</span>`).join('')}
       </div>
-      <a href="${project.link}" class="project-link">Placeholder Link →</a>
+      <a href="${project.link}" class="project-link">View Details →</a>
     </div>
   `).join('');
 }
