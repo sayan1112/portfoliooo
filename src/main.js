@@ -21,19 +21,35 @@ const skillsData = {
 
 const projectsData = [
   {
-    type: 'VIDEO',
+    type: 'SYSTEM',
     status: 'Ready',
-    title: 'Cinematic Reel 2024',
-    description: 'A showcase of highlights from short films, commercials, and creative edits.',
-    tags: ['Adobe Premiere', 'After Effects', 'LumaFusion'],
-    link: '#'
+    title: 'Zulip Open Source',
+    description: 'Contributor to Zulip, a powerful open-source team chat application. Working with Python and scalable backend systems.',
+    tags: ['Python', 'Django', 'PostgreSQL'],
+    link: 'https://github.com/sayan1112/zulip'
   },
   {
-    type: 'SYSTEM',
-    status: 'Coming Soon',
-    title: 'Scalable Backend Node',
-    description: 'A robust starting point for high-performance backend applications using Node and Redis.',
-    tags: ['Node.js', 'Express', 'Redis'],
+    type: 'WEB DEV',
+    status: 'Active',
+    title: 'VST Web Labs',
+    description: 'A collection of modern web development implementations and experiments. Focus on semantic HTML and CSS systems.',
+    tags: ['HTML5', 'CSS3', 'Web Design'],
+    link: 'https://github.com/sayan1112/VST-2025-web-dev'
+  },
+  {
+    type: 'GAME',
+    status: 'Ready',
+    title: 'HTML Game Suite',
+    description: 'A series of interactive web games including Rock Paper Scissors and custom HTML adventures.',
+    tags: ['JavaScript', 'Canvas API', 'Gamedev'],
+    link: 'https://github.com/sayan1112/html-games'
+  },
+  {
+    type: 'VIDEO',
+    status: 'Featured',
+    title: 'Cinematic Video Portfolio',
+    description: 'Professional video editing projects for the Entrepreneurship Club and commercial clients.',
+    tags: ['Premiere Pro', 'After Effects', 'LumaFusion'],
     link: '#'
   }
 ];
@@ -93,7 +109,7 @@ function renderProjects() {
       <div class="project-tags">
         ${project.tags.map(tag => `<span class="tag-item">${tag}</span>`).join('')}
       </div>
-      <a href="${project.link}" class="project-link">View Details →</a>
+      <a href="${project.link}" target="_blank" class="project-link">View Project →</a>
     </div>
   `).join('');
 }
