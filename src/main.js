@@ -21,26 +21,58 @@ const skillsData = {
 
 const projectsData = [
   {
-    type: 'SYSTEM',
-    status: 'Ready',
-    title: 'Zulip Open Source',
-    description: 'Contributor to Zulip, a powerful open-source team chat application. Working with Python and scalable backend systems.',
+    type: 'OPEN SOURCE',
+    status: 'Active',
+    title: 'Zulip Chat Platform',
+    description: 'Contributor to Zulip — a powerful open-source team chat app used by thousands of organizations worldwide. Built with Python, Django & PostgreSQL.',
     tags: ['Python', 'Django', 'PostgreSQL'],
     link: 'https://github.com/sayan1112/zulip'
   },
   {
-    type: 'WEB DEV',
+    type: 'FULL STACK',
+    status: 'Ready',
+    title: 'Coffee Shop Website',
+    description: 'A full-stack coffee shop web application with product catalog, shopping cart, and order management system.',
+    tags: ['Node.js', 'Express', 'JavaScript'],
+    link: 'https://github.com/sayan1112/coffee-shop'
+  },
+  {
+    type: 'APP',
+    status: 'Ready',
+    title: 'Weather App',
+    description: 'A modern weather application built with Next.js featuring real-time forecasts, location search, and a beautiful responsive UI.',
+    tags: ['Next.js', 'React', 'API Integration'],
+    link: 'https://github.com/sayan1112/v0-next-js-weather-app-6k'
+  },
+  {
+    type: 'INTERACTIVE',
+    status: 'Ready',
+    title: 'Virtual Piano',
+    description: 'A browser-based virtual piano with realistic sound playback, keyboard mapping, and an elegant visual interface.',
+    tags: ['JavaScript', 'Web Audio API', 'CSS3'],
+    link: 'https://github.com/sayan1112/Piano-virtual'
+  },
+  {
+    type: 'INTERACTIVE',
+    status: 'Ready',
+    title: 'Drum Kit',
+    description: 'An interactive drum machine that lets you play beats using keyboard strokes with animated visual feedback.',
+    tags: ['JavaScript', 'DOM Manipulation', 'Audio'],
+    link: 'https://github.com/sayan1112/Drum-Kit-project'
+  },
+  {
+    type: 'BACKEND',
     status: 'Active',
-    title: 'VST Web Labs',
-    description: 'A collection of modern web development implementations and experiments. Focus on semantic HTML and CSS systems.',
-    tags: ['HTML5', 'CSS3', 'Web Design'],
-    link: 'https://github.com/sayan1112/VST-2025-web-dev'
+    title: 'Backend Development',
+    description: 'A collection of backend projects and APIs exploring server-side architecture, routing, and database integration.',
+    tags: ['Node.js', 'Express', 'REST APIs'],
+    link: 'https://github.com/sayan1112/backend-development'
   },
   {
     type: 'GAME',
     status: 'Ready',
     title: 'HTML Game Suite',
-    description: 'A series of interactive web games including Rock Paper Scissors and custom HTML adventures.',
+    description: 'A series of interactive browser games including Rock Paper Scissors, Clickball, and custom HTML adventures.',
     tags: ['JavaScript', 'Canvas API', 'Gamedev'],
     link: 'https://github.com/sayan1112/html-games'
   },
@@ -48,7 +80,7 @@ const projectsData = [
     type: 'VIDEO',
     status: 'Featured',
     title: 'Cinematic Video Portfolio',
-    description: 'Professional video editing projects for the Entrepreneurship Club and commercial clients.',
+    description: 'Professional video editing work for the Entrepreneurship Club, short films, and commercial clients.',
     tags: ['Premiere Pro', 'After Effects', 'LumaFusion'],
     link: '#'
   }
