@@ -531,6 +531,108 @@ h1 {
   opacity: 0.7;
 }
 
+/* Certifications Section */
+.certifications-section {
+  background-color: var(--bg-cream);
+}
+
+.certifications-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.certs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cert-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border: var(--border-black);
+  background-color: var(--bg-white);
+  padding: 1.5rem 2rem;
+  box-shadow: 4px 4px 0px 0px #000000;
+  transition: all 0.2s;
+}
+
+.cert-item:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 8px 8px 0px 0px #000000;
+}
+
+.cert-info h3 {
+  font-size: 1.5rem;
+  font-weight: 950;
+  margin-bottom: 0.2rem;
+}
+
+.cert-info p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Cover Letter Section */
+.cover-letter-section {
+  background-color: var(--bg-white);
+  padding: 4rem 2rem;
+}
+
+.cover-letter-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cover-letter-card {
+  border: var(--border-black);
+  background-color: var(--bg-cream);
+  box-shadow: 6px 6px 0px 0px #000000;
+  transition: all 0.2s;
+  overflow: hidden;
+}
+
+.cover-letter-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px 0px #000000;
+}
+
+.cover-letter-card summary {
+  padding: 1.5rem 2rem;
+  font-weight: 950;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none; /* Hide default arrow */
+}
+
+/* Hide default details marker */
+.cover-letter-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.cover-letter-card[open] summary .icon-chevron {
+  transform: rotate(180deg);
+}
+
+.icon-chevron {
+  transition: transform 0.3s;
+  font-size: 1.2rem;
+}
+
+.cover-letter-content {
+  padding: 0 2rem 2rem 2rem;
+  border-top: 2px solid #000;
+  margin-top: 1rem;
+  padding-top: 2rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
 /* Working On Section */
 .working-on-section {
   background-color: var(--bg-blue);
@@ -867,5 +969,25 @@ h1 {
   .btn-email {
     padding: 8px 16px;
     font-size: 0.9rem;
+  }
+  .cert-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.2rem;
+  }
+  .cert-info h3 {
+    font-size: 1.2rem;
+  }
+  .cert-info p {
+    font-size: 0.9rem;
+  }
+  .cover-letter-card summary {
+    padding: 1.2rem;
+    font-size: 1.2rem;
+  }
+  .cover-letter-content {
+    padding: 0 1.2rem 1.2rem 1.2rem;
+    font-size: 1rem;
   }
 }

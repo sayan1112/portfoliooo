@@ -2,32 +2,24 @@ import './style.css'
 
 // Data for the portfolio
 const skillsData = {
+  fundamentals: [
+    { icon: '⚛️', text: 'React.js & Frontend Dev' },
+    { icon: '🎨', text: 'Responsive UI Design' },
+    { icon: '📜', text: 'Modern JavaScript (ES6+)' }
+  ],
+  backend: [
+    { icon: '🤖', text: 'Machine Learning & AI' },
+    { icon: '🚀', text: 'Backend (Node.js & Python)' },
+    { icon: '💻', text: 'Building Scalable Systems' }
+  ],
   web: [
     { icon: '🎬', text: 'Visual Storytelling' },
     { icon: '✂️', text: 'Video Editing (Premiere Pro)' },
     { icon: '📽️', text: 'Motion Graphics (AE)' }
-  ],
-  backend: [
-    { icon: '💻', text: 'Building Scalable Systems' },
-    { icon: '🚀', text: 'Backend (Node.js & Python)' },
-    { icon: '💾', text: 'Java & Database Management' }
-  ],
-  fundamentals: [
-    { icon: '⚛️', text: 'React.js & Frontend Dev' },
-    { icon: '📜', text: 'Modern JavaScript (ES6+)' },
-    { icon: '🤝', text: 'Open Source Contributor' }
   ]
 };
 
 const projectsData = [
-  {
-    type: 'OPEN SOURCE',
-    status: 'Active',
-    title: 'Zulip Chat Platform',
-    description: 'Contributor to Zulip — a powerful open-source team chat app used by thousands of organizations worldwide. Built with Python, Django & PostgreSQL.',
-    tags: ['Python', 'Django', 'PostgreSQL'],
-    link: 'https://github.com/sayan1112/zulip'
-  },
   {
     type: 'FULL STACK',
     status: 'Ready',
@@ -39,106 +31,10 @@ const projectsData = [
   {
     type: 'APP',
     status: 'Ready',
-    title: 'Weather App',
-    description: 'A modern weather application built with Next.js featuring real-time forecasts, location search, and a beautiful responsive UI.',
-    tags: ['Next.js', 'React', 'API Integration'],
-    link: 'https://weatherapp1098.netlify.app'
-  },
-  {
-    type: 'INTERACTIVE',
-    status: 'Ready',
-    title: 'Virtual Piano',
-    description: 'A browser-based virtual piano with realistic sound playback, keyboard mapping, and an elegant visual interface.',
-    tags: ['JavaScript', 'Web Audio API', 'CSS3'],
-    link: 'https://piano-sayan.netlify.app'
-  },
-  {
-    type: 'INTERACTIVE',
-    status: 'Ready',
-    title: 'Drum Kit',
-    description: 'An interactive drum machine that lets you play beats using keyboard strokes with animated visual feedback.',
-    tags: ['JavaScript', 'DOM Manipulation', 'Audio'],
-    link: 'https://peppy-biscuit-42e318.netlify.app'
-  },
-  {
-    type: 'BACKEND',
-    status: 'Active',
-    title: 'Backend Development',
-    description: 'A collection of backend projects and APIs exploring server-side architecture, routing, and database integration.',
-    tags: ['Node.js', 'Express', 'REST APIs'],
-    link: 'https://github.com/sayan1112/backend-development'
-  },
-  {
-    type: 'GAME',
-    status: 'Ready',
-    title: 'Clickball',
-    description: 'An interactive browser game where players click a moving ball to score points.',
-    tags: ['JavaScript', 'HTML5', 'CSS3'],
-    link: 'https://clickballll.netlify.app'
-  },
-  {
-    type: 'APP',
-    status: 'Ready',
     title: 'Sayanocast',
     description: 'A modern web application built with Next.js.',
     tags: ['Next.js', 'React', 'Web App'],
     link: 'https://sayanocast.netlify.app'
-  },
-  {
-    type: 'PORTFOLIO',
-    status: 'Ready',
-    title: 'Portfolio Sayan',
-    description: 'A personal portfolio website showcasing projects and skills.',
-    tags: ['HTML', 'CSS', 'JavaScript'],
-    link: 'https://portfoliosayann.netlify.app'
-  },
-  {
-    type: 'GAME',
-    status: 'Ready',
-    title: 'HTML Game Suite',
-    description: 'A series of interactive browser games including Rock Paper Scissors, Clickball, and custom HTML adventures.',
-    tags: ['JavaScript', 'Canvas API', 'Gamedev'],
-    link: 'https://github.com/sayan1112/html-games'
-  },
-  {
-    type: 'FRONTEND',
-    status: 'Ready',
-    title: 'Modern Landing Page',
-    description: 'A responsive and modern landing page built with TypeScript and modern web technologies.',
-    tags: ['TypeScript', 'HTML5', 'CSS3'],
-    link: 'https://github.com/sayan1112/landingpage'
-  },
-  {
-    type: 'GAME',
-    status: 'Ready',
-    title: 'Rock Paper Scissors',
-    description: 'A classic Rock Paper Scissors game built with HTML, CSS, and JavaScript featuring interactive UI.',
-    tags: ['HTML', 'CSS', 'JavaScript'],
-    link: 'https://github.com/sayan1112/rock-paper-scissor'
-  },
-  {
-    type: 'PORTFOLIO',
-    status: 'Ready',
-    title: 'AI Portfolio',
-    description: 'An AI-themed portfolio website showcasing projects and skills with a futuristic design.',
-    tags: ['HTML', 'CSS', 'JavaScript'],
-    link: 'https://github.com/sayan1112/portfolio-ai'
-  },
-  {
-    type: 'EDUCATION',
-    status: 'Active',
-    title: 'Web Dev Coursework',
-    description: 'A collection of in-class codes and projects for the VST 2025 Web Development course.',
-    tags: ['Web Development', 'HTML', 'CSS'],
-    link: 'https://github.com/sayan1112/VST-2025-web-dev'
-  },
-  {
-    type: 'VIDEO',
-    status: 'Featured',
-    title: 'Cinematic Video Portfolio',
-    description: 'Professional video editing work for the Entrepreneurship Club, short films, and commercial clients.',
-    tags: ['Premiere Pro', 'After Effects', 'LumaFusion'],
-    link: '#'
   }
 ];
 
@@ -147,10 +43,10 @@ function initTabs() {
   const tabs = document.querySelectorAll('.tab');
   const display = document.getElementById('system-display');
 
-  // Rename tabs to match the hybrid CS + Video profile
-  if (tabs[0]) tabs[0].innerText = 'Editing';
-  if (tabs[1]) tabs[1].innerText = 'Systems';
-  if (tabs[2]) tabs[2].innerText = 'Frontend';
+  // Rename tabs to match the AI + CS profile
+  if (tabs[0]) tabs[0].innerText = 'Frontend';
+  if (tabs[1]) tabs[1].innerText = 'AI & Systems';
+  if (tabs[2]) tabs[2].innerText = 'Video Editing';
 
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
@@ -160,7 +56,7 @@ function initTabs() {
 
       // Map button index to data keys
       const index = Array.from(tabs).indexOf(tab);
-      const keys = ['web', 'backend', 'fundamentals']; 
+      const keys = ['fundamentals', 'backend', 'web']; 
       const category = keys[index];
       const skills = skillsData[category];
       
